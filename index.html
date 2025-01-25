@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+
+</head>
+<body >
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+        });
+      </script>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <h1 id="logo"><b><span>D</span>aniel.</b></h1> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i  id="menu" class="fa fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" data-aos="fade-down">
+                <h1>Hi, I'm <span id="name">Daniel</span> Rajasekar.</h1>
+                <p>I'm a Full-Stack Web <span id="name">Developer.</span></p>
+                <a href="./Daniel_Resume.pdf" download class="btn btn2">Download CV <i class="fa fa-solid fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="hr">
+        <hr>
+        <hr>
+    </div>
+    <!-- ////////////////////About///////////////////// -->
+    <div id="about" >
+        
+        <div class="container">
+            
+            <div class="row" >
+                <div class="about-col-1" data-aos="zoom-in" data-aos-delay="400">
+                    <div id="img" >
+                    </div>
+                    
+                </div>
+                <div class="about-col-2" >
+                    <h1 class="sub-title" data-aos="fade-up" data-aos-delay="200">About Me</h1>
+                    <p data-aos="fade-up" data-aos-delay="300">To secure a responsible career
+                        opportunity to fully utilize my skills,
+                        while making a significant contribution
+                        to the success of the company.</p>
+                    <div class="tab-titles" data-aos="fade-up" data-aos-delay="450">
+                        <p class="tab-links active-link"  onclick="opentab('personal')">Personal Details</p>
+                        <p class="tab-links "  onclick="opentab('skills')">Skills & Tools</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="personal" data-aos="fade-up" data-aos-delay="700">
+                        <ul >
+                            <li><b>NAME :</b> DANIEL RAJASEKAR</li>
+                            <li><b>AGE :</b> 27 YEARS OLD</li>
+                            <li><b>LANGUAGES :</b> TAMIL, ENGLISH</li>
+                            <li><b>PHONE :</b> +91 9500681420</li>
+                            <li><b>MAIL ID:</b> DANIELRAJASEKAR29@GMAIL.COM</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills" data-aos="fade-right" data-aos-delay="500" >
+                        <div id="tools" >
+                            <img src="./html5 (1).png" alt="">
+                            <img src="./css3.png" alt="">
+                            <img src="./javascript.png" alt="">
+                            <img src="./react.png" alt="">
+                            <!-- <br> -->
+                            <img src="./nodejs.png" alt="">
+                            <img src="./mysql.png" alt="">
+                            <img src="./mongodb.png" alt="">
+                            <img src="./java.png" alt="">
+                            <!-- <br> -->
+                            <img src="./figma.png" alt="">
+                            <img src="./github.png" alt="">
+                            <img src="./vscode.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr">
+        <hr>
+        <hr>
+    </div>
+        <!-- ////////////////////Education///////////////////// -->
+
+        <div id="education">
+            <div class="container" data-aos="fade-up" data-aos-delay="400">
+                <h1 class="sub-title">My Education</h1>
+                <div class="education-list">
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa fa-solid fa-graduation-cap"></i>
+                        <h2>2023</h2>
+                        <p><b> Advanced Certificate Program
+                            in Full-Stack Development </b><br>IITR-FSD </p>
+                            <a target="_blank" href="https://drive.google.com/file/d/1lGoo-YkJftM-GiLJ8lphpjfd8s833O24/view"><button class="btn3">View</button></a>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa fa-solid fa-graduation-cap"></i>
+                        <h2>2020</h2>
+                        <p><b>BE. Mechatronics</b>  <br>
+                        SCSVMV Deemed university, Kanchipuram
+                        </p>
+                        <a target="_blank" href="https://drive.google.com/file/d/1lam__gvGyt1H1m0Q3N3zDEwuw5_vPXBH/view?usp=drive_link"><button class="btn3">View</button></a>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa fa-solid fa-graduation-cap"></i>
+                        <h2>2017</h2>
+                        <p><b>Diploma in Mechatronics</b><br>
+                            NTTF, Vellore </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+                <hr>
+            </div>
+            <!-- /////////////////Portfolio ////////////////// -->
+            <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title" data-aos="fade-up" data-aos-delay="200"  >My Work</h1>
+            <div class="slide-container swiper"  data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                <div class="slide-content" >
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                   <img src="./online_Pharmacy.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="layer">
+                                <h2 class="name">Online Pharmacy & lab test
+    </h2>
+                                <p class="description">This is a web application for an online pharmacy where the
+                                    user can view the product and add it to the cart. And the user
+                                    can fill the details and book for lab test.</p>
+    
+                                    <a target="_blank" href="https://onpharmacylabtest.netlify.app/"><i class=" fa fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+     <img src="./weather.png" alt="" class="card-img"></div>
+                            </div>
+    
+                            <div class="card-content">
+                                <div class="layer">
+                                <h2 class="name">Weather App
+    </h2>
+                                <p class="description">Weather apps use science and technology to predict the atmospheric conditions for a given location and time.</p>
+    
+                                <a target="_blank" href="https://weatherseasoncondition.netlify.app/"><i class=" fa fa-solid fa-link"></i></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                   <img src="./expensetrack.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="layer">
+                                <h2 class="name">Expense Tracker
+    </h2>
+                                <p class="description">This app is used to keep a track of Income-Expenses and outgoing-Expenses of user on a day to day basics</p>
+    
+                                    <a target="_blank" href="https://outgoing-track.netlify.app/"><i class=" fa fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                   <img src="./movies.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="layer">
+                                <h2 class="name">Movie List
+    </h2>
+                                <p class="description">The project aims to create a website where we maintain the latest films, Upcoming films, Top rated movies along with their details and manage user favorites.</p>
+    
+                                    <a target="_blank" href="https://movieslist11.netlify.app/"><i class=" fa fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+            
+
+    <!-- Swiper JS -->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+      <!--Uncomment this line-->
+    <script src="script.js"></script>
+    <div class="hr">
+        <hr>
+        <hr>
+    </div>
+        <!-- /////////Contact////////////// -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title" data-aos="fade-up" data-aos-delay="200" >Contact Me</h1>
+                        <div>
+                        <p data-aos="fade-up" data-aos-delay="300" ><img src="./gmail.png" alt="gmail"><span>Mail Me</span><br><b>danielrajasekar29@gmail.com</b></p>
+                        <p data-aos="fade-up" data-aos-delay="400" ><img src="./call.png" alt="call me"><span>Call Me</span><br><b>+91 9500681420</b></p>
+                        </div>
+                        <div class="social-icons">
+                            <a data-aos="fade-up" data-aos-delay="500" href="#"><img src="./facebook.png" alt="fb"></a>
+                            <a data-aos="fade-up" data-aos-delay="500" href="#"><img src="./instagram.png" alt="insta"></a>
+                            <a data-aos="fade-up" data-aos-delay="500" href="#"><img src="./linkedin.png" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input data-aos="fade-right" data-aos-delay="700" type="text" name="Name" placeholder="Your Name" required>
+                            <input data-aos="fade-right" data-aos-delay="700" type="email" name="Email" placeholder="your Email" required>
+                            <input data-aos="fade-right" data-aos-delay="700" type="time" name="Time" placeholder="Select Time" required>
+                            <textarea  data-aos="fade-right" data-aos-delay="700" name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                            <button data-aos="fade-right" data-aos-delay="700" type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"> </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="hr">
+            <hr>
+            <hr>
+        </div>
+<!-- active tab -->
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents'); 
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        
+
+// small screen js  menu bar
+
+var sidemenu = document.getElementById('sidemenu');
+var menu = document.getElementById('menu');
+function openmenu(){
+    sidemenu.style.right = "0";
+    menu.style.display= "none"
+    
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+    menu.style.display= "block"
+    
+}
+    </script>
+
+    <!-- google form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyIir_-vwNT944_V28cUu4o3CA2Y9HspZliySKv7Mfpn6Xn6uzyqNReI8EEQV3aQVU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML=`Message sent successfully <i class="fa fa-solid fa-thumbs-up"></i>`
+            setTimeout(function(){
+                msg.innerHTML="";
+            },3000)
+            form.reset();
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
+</html>
